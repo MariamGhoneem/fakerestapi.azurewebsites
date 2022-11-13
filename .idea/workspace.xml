@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36157410-571c-4dd5-947f-c325ea2ab13e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/authors/GetAuthors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+    <list default="true" id="36157410-571c-4dd5-947f-c325ea2ab13e" name="Changes" comment="get authors">
+      <change afterPath="$PROJECT_DIR$/src/test/java/authors/PostAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/authors/GetAuthors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/authors/GetAuthors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +41,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/hp/IdeaProjects/Twitter_Test/src/test/java/basics/BaseTest.java",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.GetAuthors.StatusCodeIs200">
+  <component name="RunManager" selected="TestNG.GetAuthors.correctResponseObjects">
     <configuration name="GetAuthors.StatusCodeIs200" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
@@ -68,17 +65,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZipCodeTest.requestUsZipCode90210_checkContentType_expectApplicationJson" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetAuthors.correctResponseObjects" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zipCode.*" />
+          <option name="PATTERN" value="authors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zipCode" />
-      <option name="MAIN_CLASS_NAME" value="zipCode.ZipCodeTest" />
-      <option name="METHOD_NAME" value="requestUsZipCode90210_checkContentType_expectApplicationJson" />
+      <option name="PACKAGE_NAME" value="authors" />
+      <option name="MAIN_CLASS_NAME" value="authors.GetAuthors" />
+      <option name="METHOD_NAME" value="correctResponseObjects" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -86,17 +83,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZipCodeTest.requestUsZipCode90210_checkStatusCode_expectHttp200" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostAuthor" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zipCode.*" />
+          <option name="PATTERN" value="authors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zipCode" />
-      <option name="MAIN_CLASS_NAME" value="zipCode.ZipCodeTest" />
-      <option name="METHOD_NAME" value="requestUsZipCode90210_checkStatusCode_expectHttp200" />
+      <option name="PACKAGE_NAME" value="authors" />
+      <option name="MAIN_CLASS_NAME" value="authors.PostAuthor" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostAuthor.StatusCodeIs200" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="authors" />
+      <option name="MAIN_CLASS_NAME" value="authors.PostAuthor" />
+      <option name="METHOD_NAME" value="StatusCodeIs200" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,17 +118,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZipCodeTest.requestUsZipCode90210_logRequestAndResponseDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostAuthor.firstnamelastnameshouldbemandatory" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rest-assured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zipCode.*" />
+          <option name="PATTERN" value="authors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zipCode" />
-      <option name="MAIN_CLASS_NAME" value="zipCode.ZipCodeTest" />
-      <option name="METHOD_NAME" value="requestUsZipCode90210_logRequestAndResponseDetails" />
+      <option name="PACKAGE_NAME" value="authors" />
+      <option name="MAIN_CLASS_NAME" value="authors.PostAuthor" />
+      <option name="METHOD_NAME" value="firstnamelastnameshouldbemandatory" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,10 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GetAuthors.correctResponseObjects" />
+        <item itemvalue="TestNG.PostAuthor.firstnamelastnameshouldbemandatory" />
+        <item itemvalue="TestNG.PostAuthor" />
+        <item itemvalue="TestNG.PostAuthor.StatusCodeIs200" />
         <item itemvalue="TestNG.GetAuthors.StatusCodeIs200" />
-        <item itemvalue="TestNG.ZipCodeTest.requestUsZipCode90210_logRequestAndResponseDetails" />
-        <item itemvalue="TestNG.ZipCodeTest.requestUsZipCode90210_checkContentType_expectApplicationJson" />
-        <item itemvalue="TestNG.ZipCodeTest.requestUsZipCode90210_checkStatusCode_expectHttp200" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +155,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667762898145</updated>
     </task>
+    <task id="LOCAL-00001" summary="get authors">
+      <created>1667770188491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667770188491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,5 +175,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="get authors" />
+    <option name="LAST_COMMIT_MESSAGE" value="get authors" />
   </component>
 </project>
