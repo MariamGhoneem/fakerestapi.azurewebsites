@@ -1,14 +1,11 @@
 package authors;
 
 import base.BaseTest;
-import io.restassured.specification.RequestSpecification;
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
 
 public class GetAuthors extends BaseTest{
-    public static RequestSpecification requestSpec;
-
     @Test
     public void StatusCodeIs200() {
         given().
@@ -24,11 +21,18 @@ public class GetAuthors extends BaseTest{
     public void correctResponseObjects() {
         given().
                 spec(requestSpec).
+                contentType("application/json").
+
         when().
                 get("/api/v1/Authors").
         then().
                 //??
-              body();
+              //body("id",);
+//                assertThat().
+                body("[$]",Matchers.hasKey("id")).
+                body("[0]",Matchers.hasKey("idBook")).
+                body("[0]",Matchers.hasKey("firstName")).
+                body("[0]",Matchers.hasKey("lastName"));
     }
 }
 
